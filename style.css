@@ -26,8 +26,8 @@ body {
   width: 90%;
   height: 110px;
   margin: 0 auto;
-  border: red 2px solid;
-  margin-bottom: 0;
+  /* border: red 2px solid; */
+  
 }
 
 .logo {
@@ -54,8 +54,8 @@ nav li a {
   color: #ffffff;
 }
 
-span {
-  border: #0e75ba 3px solid;
+.btn {
+  border: #55acf3 3px solid;
   color: white;
   padding: 10px;
   width: 100px;
@@ -67,8 +67,9 @@ span {
 }
 
 span:hover {
-  background-color: #0e75ba;
-  font: white;
+  background-color: #55acf3;
+  font: green;
+  opacity: 0.4;
 }
 
 .main-wrapper{
@@ -77,28 +78,95 @@ span:hover {
 
 .main{
   display: grid;
-  /* grid-template-rows: auto; */
-  grid-template-columns: 45% 10% 45%;
+  grid-template-columns: repeat(3, auto);
 }
 
 .landing-left {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 70px;
+  margin-right: 20%;
+
 }
 
 hr{
   transform: rotate(45%);
-  /* color: #200267;
-  height: 300px;   */
-  border: white 2px solid;
+  border: #ffffff 2px solid;
   height: 500px;
-  transform: rotate(15deg);
+  transform: rotate(12deg);
   width: 0.1px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .landing-right {
   display: flex;
   align-items: center;
 }
+
+.countdown-wrapper{
+  display: grid;
+  padding: 20px;
+  /* border-radius: 10px; */
+  /* background: #000; */
+  opacity: 0.7;
+  margin: 5px;
+}
+
+.countdown-wrapper div {
+  padding: 20px;
+  /* border-bottom: 3px #4c86f1 solid; */
+  /* border-radius: 10px; */
+  /* background: #000; */
+  /* opacity: 0.7; */
+  margin: 5px;
+}
+
+.countdown-wrapper span {
+  display: block;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.bottom-grid{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  
+}
+
+.days{
+  font-size: 120px;
+  display: grid;
+  justify-content: end;
+  border-bottom: #55acf3 4px solid;
+}
+
+.hours{
+  border-bottom: #55acf3 4px solid;
+}
+
+.mins{
+  border-bottom: #55acf3 4px solid;
+}
+
+.seconds{
+  border-bottom: #55acf3 4px solid;
+}
+
+.landing-right{
+  border: red 4px solid;
+}
+
+.heading{
+  font-size: 90px;
+  color: #55acf3;
+}
+
+.sub-heading{
+  font-size: 30px;
+}
+
+.preview{
+  font-size: 20px;
+}
+
